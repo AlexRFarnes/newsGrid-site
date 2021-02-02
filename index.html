@@ -1,30 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewsGrid | World News</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Staatliches&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
     <nav class="nav">
-        <div class="container grid-wrapper">
-            <img src="./img/logo.png" alt="NewsGrid media logo" class="logo">
-            <div class="social-links">
-                <a class="sociak-links__link" href="http://facebook.com"><i class="fab fa-facebook fa-2x sociak-links__icon" target="_blank"></i></a>
-                <a class="sociak-links__link" href="http://twitter.com"><i class="fab fa-twitter fa-2x sociak-links__icon" target="_blank"></i></a>
-                <a class="sociak-links__link" href="http://instagram.com"><i class="fab fa-instagram fa-2x sociak-links__icon" target="_blank"></i></a>
-                <a class="sociak-links__link" href="http://youtube.com"><i class="fab fa-youtube fa-2x sociak-links__icon" target="_blank"></i></a>
-            </div>
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link current">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-            </ul>
+      <div class="container nav-grid-wrapper">
+        <img src="./img/logo.png" alt="NewsGrid media logo" class="logo" />
+        <div class="social-links">
+          <a class="sociak-links__link" href="http://facebook.com"
+            ><i
+              class="fab fa-facebook fa-2x sociak-links__icon"
+              target="_blank"
+            ></i
+          ></a>
+          <a class="sociak-links__link" href="http://twitter.com"
+            ><i
+              class="fab fa-twitter fa-2x sociak-links__icon"
+              target="_blank"
+            ></i
+          ></a>
+          <a class="sociak-links__link" href="http://instagram.com"
+            ><i
+              class="fab fa-instagram fa-2x sociak-links__icon"
+              target="_blank"
+            ></i
+          ></a>
+          <a class="sociak-links__link" href="http://youtube.com"
+            ><i
+              class="fab fa-youtube fa-2x sociak-links__icon"
+              target="_blank"
+            ></i
+          ></a>
         </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link current">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-</body>
+
+    <!-- Showcase -->
+    <header class="showcase">
+      <div class="container showcase-grid-wrapper">
+        <div class="showcase__content">
+          <div class="category category--sport">Sports</div>
+          <h1>Some Sports Article</h1>
+          <p class="mg-bottom--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            laudantium similique totam repellendus, aliquam ratione natus fuga
+            illum dolores? Fuga, velit iure natus dolor autem quaerat rerum nam
+            nobis delectus!
+          </p>
+          <a href="article.html" class="btn btn--primary">Read more</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Articles -->
+    <section class="home-articles pad-2">
+      <div class="container">
+        <h2>Editors' Top Picks</h2>
+        <div class="articles-grid-wrapper pad-1">
+          <article class="card">
+            <img src="img/articles/ent1.jpg" alt="" />
+            <div class="card__content">
+              <div class="category category--ent">Entertainment</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dignissimos odit laborum exercitationem beatae eius
+                pariatur voluptatem esse mollitia libero.
+              </p>
+            </div>
+          </article>
+          <article class="card bg--dark">
+            <div class="category category--sport">Sports</div>
+            <h3>
+              <a class="text--light" href="article.html"
+                >Lorem ipsum dolor sit amet.</a
+              >
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae dignissimos odit laborum exercitationem beatae eius
+              pariatur voluptatem esse mollitia libero.
+            </p>
+          </article>
+          <article class="card">
+            <img src="img/articles/tech1.jpg" alt="" />
+            <div class="category category--tech">Technology</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae dignissimos odit laborum exercitationem beatae eius
+              pariatur voluptatem esse mollitia libero.
+            </p>
+          </article>
+          <article class="card">
+            <div class="category category--sport">Sports</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae dignissimos odit laborum exercitationem beatae eius
+              pariatur voluptatem esse mollitia libero.
+            </p>
+            <img src="img/articles/sports1.jpg" alt="" />
+          </article>
+          <article class="card">
+            <img src="img/articles/tech2.jpg" alt="" />
+            <div class="category category--tech">Technology</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae dignissimos odit laborum exercitationem beatae eius
+              pariatur voluptatem esse mollitia libero.
+            </p>
+          </article>
+          <article class="card bg--primary">
+            <div class="category category--sport">Sports</div>
+            <h3>
+              <a class="text--light" href="article.html"
+                >Lorem ipsum dolor sit amet.</a
+              >
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae dignissimos odit laborum exercitationem beatae eius
+              pariatur voluptatem esse mollitia libero.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="category category--ent">Entertainment</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dignissimos odit laborum exercitationem beatae eius
+                pariatur voluptatem esse mollitia libero.
+              </p>
+            </div>
+            <img src="img/articles/ent2.jpg" alt="" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container footer-grid-wrapper">
+        <div>
+          <img src="img/logo_light.png" alt="NewsGrid" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            aliquid, fugiat eum quos dolor esse officiis sit ducimus ut. Quasi!
+          </p>
+        </div>
+        <div><h3>Email Newsletter</h3></div>
+      </div>
+    </footer>
+  </body>
 </html>
